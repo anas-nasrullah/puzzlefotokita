@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    background-size: 300px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .puzzle {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    margin: 20px auto;
+  }
+  
+  .piece {
+    width: 100px;
+    height: 100px;
+    background-size: 300px 300px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  button:hover {
+    background: #005fa3;
+  }
+  
