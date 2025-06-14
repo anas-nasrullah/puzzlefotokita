@@ -8,12 +8,22 @@
 </head>
 <body>
   <div class="container">
-    <h1>🧩 Puzzle Foto &#128150;</h1>
-    <div class="puzzle" id="puzzle"></div>
-    <button onclick="shufflePuzzle()">Acak Ulang</button>
-    <p id="message"></p>
+    <h1>🧩 Puzzle Foto &#128150; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+    <div class="game-area">
+      <div class="left-area">
+        <div id="puzzle" class="puzzle"></div>
+        <button onclick="startGame()">Mulai</button>
+        <p id="timer">Waktu: 30</p>
+        <p id="message"></p>
+      </div>
+      <div class="preview">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Preview:</p>
+        <img src="https://raw.githubusercontent.com/anas-nasrullah/images/refs/heads/main/anas-anis-300x300.jpg" alt="Preview" />
+      </div>
+    </div>
   </div>
-
+  <audio id="winSound" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+  <audio id="failSound" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
   <script src="script.js"></script>
 </body>
 </html>
